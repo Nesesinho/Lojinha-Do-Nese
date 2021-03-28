@@ -3,7 +3,7 @@ import Service from './Service.js';
 export default class ItensController {
     constructor() {
         this.$ = document.querySelector.bind(document);
-        this.money = 99999999999;
+        this.money = 0;
         this.placeItens = this.$('.itens__list');
         this.itens = Service.getAll('url')
         this.setInterval = [];
