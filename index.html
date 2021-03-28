@@ -2,60 +2,66 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Nese Store</title>
-	<link href="reset.css" rel="stylesheet" type="text/css" />
-	<link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nese Store</title>
+    <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<h1 class="title">---Lojinha do Nese</h1>
-	
-  <div>
-    <div class="BarraDaEsquerda">
-      <ul class="lista">
-      </ul>
+<div class="container">
+    <header>
+        <div class="header">
+            <h1 class="header__title">Lojinha do Nese</h1>
+            <ul class="header__list">
+                <li class="header__list__iten"><a href="#" class="header__list__iten__link">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="itens">
+        <ul class="itens__list">
+        </ul>
     </div>
 
-      <div class="BarraDaDireita">
+    <div class="content">
+
+    </div>
+
+    <div class="buffs">
         <ol class="lista">
-          <li>
-            <p>Celular</p>
-            <button>Comprar</button>
-          </li>
-          <li>
-            <p>Google Stadia</p>
-            <button>Comprar</button>
-          </li>
-          <li>
-            <p>Nintendo Switch</p>
-            <button>Comprar</button>
-          </li>
-          <li>
-            <p>Xbox One X</p>
-            <button>Comprar</button>
-          </li>
-          <li>
-            <p>PS5</p>
-            <button>Comprar</button>
-          </li>
-          <li>
-            <p>PC</p>
-            <button>Comprar</button>
-          </li>
+            <li>
+                <p>Celular</p>
+                <button>Comprar</button>
+            </li>
+            <li>
+                <p>Google Stadia</p>
+                <button>Comprar</button>
+            </li>
+            <li>
+                <p>Nintendo Switch</p>
+                <button>Comprar</button>
+            </li>
+            <li>
+                <p>Xbox One X</p>
+                <button>Comprar</button>
+            </li>
+            <li>
+                <p>PS5</p>
+                <button>Comprar</button>
+            </li>
+            <li>
+                <p>PC</p>
+                <button>Comprar</button>
+            </li>
         </ol>
-      </div>
+        <div class="dinheirinho">
+            <p class="dinheiro"></p>
+        </div>
+    </div>
+</div>
 
-      <div class="dinheirinho">
-        <p class="dinheiro"></p>
-      </div>
-
-  </div>
-
-  <div>
-      <iframe id="DouglasVideo2" class="DouglasVideo" width="560" height="315" src="https://www.youtube.com/embed/kZ6J9AIMZJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-    <script type="module" src="script.js"></script>
-  </body>
+<script type="module" src="./js/script.js"></script>
+</body>
 </html>

@@ -1,0 +1,119 @@
+body {
+    font-family: Arial;
+    background-color: #FAFAFA;
+}
+
+.container {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 170px auto 170px;
+    grid-template-rows: 4.5rem auto;
+    grid-template-areas:
+      'HD HD HD'
+      'IL CN BF'
+;
+}
+
+header {
+    grid-area: HD;
+    padding: 1.5rem;
+    background-color: #000;
+}
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header__list__iten__link {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.header__list__iten__link:hover {
+    background-color: #0F0F0F;
+}
+
+.itens {
+    grid-area: IL;
+    max-height: 100%;
+    padding: 1rem;
+    background-color: #5A5A5A;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.itens__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itens::-webkit-scrollbar {
+    display: none;
+}
+
+.itens__list__iten {
+    padding: 1rem 0;
+}
+
+.itens__list__iten__desc {
+    align-items: center;
+}
+
+.itens__list__iten__desc * {
+    margin-bottom: .5rem;
+}
+
+.itens__list__iten__nome {
+    text-align: center;
+    font-size: 14pt;
+    margin: 1rem 0;
+}
+
+.itens__list__iten__quantidade {
+
+}
+
+.itens__list__iten__preco {
+}
+
+.itens__list__iten__renda {
+
+}
+
+.btn_comprar {
+    margin: 1.5rem;
+    width: fit-content;
+    padding: .5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.itens__list__iten__picture img {
+    width: 100%;
+}
+
+.content {
+    grid-area: CN;
+}
+
+.buffs {
+    grid-area: BF;
+}
