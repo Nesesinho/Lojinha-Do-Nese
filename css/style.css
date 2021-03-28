@@ -66,6 +66,10 @@ header {
     justify-content: center;
 }
 
+.dinheiro {
+    padding: 1rem;
+}
+
 .itens::-webkit-scrollbar {
     display: none;
 }
