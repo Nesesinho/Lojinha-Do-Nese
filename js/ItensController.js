@@ -34,9 +34,9 @@ export default class ItensController {
           </div>
           <div class="itens__list__iten__desc">
             <p class="itens__list__iten__nome">${iten.nome}</p>
-            <p class="itens__list__iten__quantidade">Quantidade: ${iten.quantidade}</p>
-            <p class="itens__list__iten_preco">Preço: ${iten.preco.toFixed(0)} R$</p>
-            <p class="itens__list__iten__renda">Renda/s: ${iten.renda} R$</p>
+            <p class="itens__list__iten__quantidade">Quantidade: <span>${iten.quantidade}</span></p>
+            <p class="itens__list__iten_preco">Preço: <span>${iten.preco.toFixed(0)}</span> R$</p>
+            <p class="itens__list__iten__renda">Renda/s: <span>${iten.renda}</span> R$</p>
             <button type="button" class="btn_comprar" data-id="${iten.id}">comprar</button>
           </div>
         </li>
@@ -54,7 +54,7 @@ export default class ItensController {
         iten.preco += iten.preco * (15 / 100);
         iten.quantidade++;
         this.itens[index] = iten;
-        this.setElementValue({ reset: this.$('.itens__list__iten__quantidade'), value: iten.quantidade });
+        this.setElementValue({ reset: this.$('.itens__list__iten__quantidade span'), value: iten.quantidade });
     }
 
     setElementValue(...setters) {
