@@ -50,7 +50,7 @@ export default class ItensController {
         if (!(iten && this.money >= iten.preco)) return window.alert('não tem dinheiro suficiente')
         this.easterEgg(iten.nome, iten.quantidade)
         this.money -= iten.preco;
-        iten.preco += iten.preco * (25 / 100);
+        iten.preco += iten.preco * (15 / 100);
         iten.quantidade++;
         this.itens[index] = iten;
         this.init();
@@ -65,7 +65,6 @@ export default class ItensController {
             this.setInterval.push(
                 setInterval(() => {
                     this.money += getMoney;
-                    console.log(getMoney)
                     document.querySelector('.dinheiro').textContent = this.money.toFixed(0)+' R$';
 
                 }, 1000)
