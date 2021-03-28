@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background-color: #FAFAFA;
+    background-color: #286584;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
 header {
     grid-area: HD;
     padding: 1.5rem;
-    background-color: #000;
+    background-color: #002538;
 }
 
 .header {
@@ -50,9 +50,10 @@ header {
     grid-area: IL;
     max-height: 100%;
     padding: 1rem;
-    background-color: #5A5A5A;
+    background-color: #002538;
     overflow-y: scroll;
     scrollbar-width: none;
+    color: white;
 }
 
 .itens__list {
@@ -100,8 +101,8 @@ header {
     width: fit-content;
     padding: .5rem;
     font-size: 1rem;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #ff9528;
     border-radius: 5px;
 
 }
