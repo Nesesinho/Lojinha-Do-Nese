@@ -75,7 +75,13 @@ export default class ItensController {
 }
 
 function easterEgg(nome, quantidade) {
-    if (nome == 'Stonks' && quantidade == 1) {
-        alert('hum pelo visto alguém quer fazer um harem.')
+    if (nome == 'Douglas' && quantidade == 20) {
+        alert('Hum pelo visto alguém quer fazer um harem.')
+    }
+    if (nome == 'Stonks' && quantidade == 50) {
+        alert('Faça bom uso desses Stonks')
+    }
+    if (nome == 'Jose') {
+        alert('Raça absoluta alem da conciencia, esse é o poder que beira a onipotencia')
     }
 }
