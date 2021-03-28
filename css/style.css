@@ -21,7 +21,7 @@ header {
 }
 
 .header {
-    max-width: 1200px;
+    padding: 0 1rem;
     margin: auto;
     display: flex;
     align-items: center;
