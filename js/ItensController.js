@@ -82,6 +82,8 @@ export default class ItensController {
         if (nome == 'Douglas' && quantidade == 20) {
             alert('Hum pelo visto alguém quer fazer um harem.')
         }
+        if (nome == 'Stonks' && quantidade == 1) {
+            alert('Quem leu é gay')
         if (nome == 'Stonks' && quantidade == 50) {
             alert('Faça bom uso desses Stonks')
         }
