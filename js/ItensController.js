@@ -48,9 +48,7 @@ export default class ItensController {
         const iten = this.itens.find(iten => iten.id == id);
         const index = this.itens.indexOf(iten);
         if (!(iten && this.money >= iten.preco)) return window.alert('não tem dinheiro suficiente')
-        if (iten.nome == 'douglas' && iten.quantidade == 99) {
-            alert('hum pelo visto alguém quer fazer um harem.')
-        }
+        easterEgg(iten.nome, iten.quantidade)
         this.money -= iten.preco;
         iten.preco += iten.preco * (25 / 100);
         iten.quantidade++;
@@ -73,5 +71,11 @@ export default class ItensController {
                 }, 1000)
             )
         })
+    }
+}
+
+function easterEgg(nome, quantidade) {
+    if (nome == 'Stonks' && quantidade == 1) {
+        alert('hum pelo visto alguém quer fazer um harem.')
     }
 }
