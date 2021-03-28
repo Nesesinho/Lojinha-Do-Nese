@@ -7,7 +7,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 175px auto 175px;
-    grid-template-rows: 4.5rem auto;
+    grid-template-rows: 5rem auto;
     grid-template-areas:
       'HD HD HD'
       'IL CN BF'
@@ -18,10 +18,10 @@ header {
     grid-area: HD;
     padding: 1.5rem;
     background-color: #002538;
+    width: 100%;
 }
 
 .header {
-    padding: 0 1rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -37,6 +37,7 @@ header {
 
 .header__list {
     display: flex;
+    align-items: center;
 }
 
 .header__list__iten__link {
