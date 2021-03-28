@@ -46,14 +46,17 @@ export default class ItensController {
     }
 
     comprar(id) {
-        const iten = this.itens.find(iten => iten.id == id);
+        const iten = this.itens.find(iten => iten.id === id);
+        console.log(iten, this.itens)
         const index = this.itens.indexOf(iten);
+        console.log(index)
         if (!(iten && this.money >= iten.preco)) return window.alert('não tem dinheiro suficiente')
         this.easterEgg(iten.nome, iten.quantidade)
         this.money -= iten.preco;
         iten.preco += iten.preco * (15 / 100);
         iten.quantidade++;
         this.itens[index] = iten;
+        console.log(iten, this.itens)
         const elementQuant = this.$('.quantidade_'+id+' span');
         const elementPreco = this.$('.preco_'+id+' span');
         this.setElementValue({ reset: elementQuant, value: iten.quantidade }, { reset: elementPreco, value: iten.preco.toFixed(0)});
