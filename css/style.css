@@ -16,7 +16,7 @@ body {
 
 header {
     grid-area: HD;
-    padding: 1rem;
+    padding: 1.4rem;
     background-color: #002538;
     width: 100%;
 }
