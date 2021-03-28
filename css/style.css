@@ -117,4 +117,11 @@ header {
 
 .buffs {
     grid-area: BF;
+    max-height: 100%;
+    padding: 1rem;
+    background-color: #183e51;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    color: white;
+
 }
