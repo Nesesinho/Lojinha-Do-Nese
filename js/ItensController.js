@@ -35,7 +35,7 @@ export default class ItensController {
             <p class="itens__list__iten__nome">${iten.nome}</p>
             <p class="itens__list__iten__quantidade">Quantidade: ${iten.quantidade}</p>
             <p class="itens__list__iten_preco">Preço: ${iten.preco.toFixed(0)} R$</p>
-            <p class="itens__list__iten__renda">Renda/m: ${iten.renda} R$</p>
+            <p class="itens__list__iten__renda">Renda/s: ${iten.renda} R$</p>
             <button type="button" class="btn_comprar" data-id="${iten.id}">comprar</button>
           </div>
         </li>
@@ -70,7 +70,7 @@ export default class ItensController {
                     console.log(getMoney)
                     document.querySelector('.dinheiro').textContent = this.money.toFixed(0)+' R$';
 
-                }, 100)
+                }, 1000)
             )
         })
     }
