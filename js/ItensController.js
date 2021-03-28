@@ -81,7 +81,7 @@ function easterEgg(nome, quantidade) {
     if (nome == 'Stonks' && quantidade == 50) {
         alert('Faça bom uso desses Stonks')
     }
-    if (nome == 'Jose') {
+    if (nome == 'Jose' && quantidade == 1) {
         alert('Raça absoluta alem da conciencia, esse é o poder que beira a onipotencia')
     }
 }
