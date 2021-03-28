@@ -17,7 +17,7 @@ export default class ItensController {
         btnComprar.forEach(btn => {
             btn.addEventListener('click', e => {
                 e.preventDefault()
-                const id = btn.dataset.id;
+                const id = parseInt(btn.dataset.id);
                 this.comprar(id);
             })
         })
