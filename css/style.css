@@ -16,7 +16,7 @@ body {
 
 header {
     grid-area: HD;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: #002538;
     width: 100%;
 }
@@ -69,6 +69,10 @@ header {
 
 .dinheiro {
     padding: 1rem;
+}
+
+.text-dinheiro {
+    color: white;
 }
 
 .itens::-webkit-scrollbar {
