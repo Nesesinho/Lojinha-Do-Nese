@@ -23,7 +23,7 @@ export default class Service {
             },
             {
                 id:3,
-                picture: 'https://images-ext-1.discordapp.net/external/thPxQkDuykDr85y8-fHkRUOC0EIYAaqRer5BF63nXk8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/443797355393974272/0f5559a2b9d0b30e3a0f5ac95d0521a4.png?width=676&height=676',
+                picture: 'https://images-ext-1.discordapp.net/external/thPxQkDuykDr85y8-fHkRUOC0EIYAaqRer5BF63nXk8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/443797355393974272/0f5559a2b9d0b30e3a0f5ac95d0521a4.png',
                 nome: 'Juan',
                 preco: 10000,
                 renda: 100,
@@ -55,7 +55,7 @@ export default class Service {
             },
             {
                 id: 7,
-                picture: 'https://images-ext-1.discordapp.net/external/nHTIERnPA5T6ZqYLycFX2L943LO9BUZBcAfxVA-VDIM/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/371823685142708244/7c598d1c42d215f19a15dea4cd6f3edb.png?width=676&height=676',
+                picture: 'https://images-ext-1.discordapp.net/external/nHTIERnPA5T6ZqYLycFX2L943LO9BUZBcAfxVA-VDIM/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/371823685142708244/7c598d1c42d215f19a15dea4cd6f3edb.png',
                 nome: "Douglas",
                 preco: 100000,
                 renda: 1000,
@@ -71,7 +71,15 @@ export default class Service {
             },
             {
                 id: 9,
-                picture: 'https://cdn.discordapp.com/avatars/705121634020753578/60a218c4089596cb3c2ab4086085c269.png?size=2048',
+                picture: 'https://cdn.discordapp.com/avatars/255752076338921472/0670bcd5e7a9ec40ead62360fd33a664.png',
+                nome: 'Nese',
+                preco: 750000,
+                renda: 7500,
+                quantidade: 0
+            },
+            {
+                id: 10,
+                picture: 'https://cdn.discordapp.com/avatars/705121634020753578/60a218c4089596cb3c2ab4086085c269.png',
                 nome: "Jose",
                 preco: 1000000,
                 renda: 10000,
