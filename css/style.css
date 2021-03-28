@@ -35,6 +35,11 @@ header {
     font-weight: bold;
 }
 
+.header__list {
+    display: flex;
+
+}
+
 .header__list__iten__link {
     color: white;
     text-decoration: none;
