@@ -63,6 +63,7 @@ export default class ItensController {
         setters.forEach(setter => {
             setter.reset.textContent = setter.value;
         })
+        this.render();
     }
 
     render() {
@@ -86,6 +87,7 @@ export default class ItensController {
         }
         if (nome == 'Stonks' && quantidade == 1) {
             alert('Quem leu é gay')
+        }
         if (nome == 'Stonks' && quantidade == 50) {
             alert('Faça bom uso desses Stonks')
         }
