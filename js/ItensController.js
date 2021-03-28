@@ -48,7 +48,7 @@ export default class ItensController {
         const iten = this.itens.find(iten => iten.id == id);
         const index = this.itens.indexOf(iten);
         if (!(iten && this.money >= iten.preco)) return window.alert('não tem dinheiro suficiente')
-        easterEgg(iten.nome, iten.quantidade)
+        this.easterEgg(iten.nome, iten.quantidade)
         this.money -= iten.preco;
         iten.preco += iten.preco * (25 / 100);
         iten.quantidade++;
@@ -72,16 +72,17 @@ export default class ItensController {
             )
         })
     }
+        
+    easterEgg(nome, quantidade) {
+        if (nome == 'Douglas' && quantidade == 20) {
+            alert('Hum pelo visto alguém quer fazer um harem.')
+        }
+        if (nome == 'Stonks' && quantidade == 50) {
+            alert('Faça bom uso desses Stonks')
+        }
+        if (nome == 'Jose' && quantidade == 0) {
+            alert('Raça absoluta alem da conciencia, esse é o poder que beira a onipotencia')
+        }
+    }
 }
 
-function easterEgg(nome, quantidade) {
-    if (nome == 'Douglas' && quantidade == 20) {
-        alert('Hum pelo visto alguém quer fazer um harem.')
-    }
-    if (nome == 'Stonks' && quantidade == 50) {
-        alert('Faça bom uso desses Stonks')
-    }
-    if (nome == 'Jose' && quantidade == 1) {
-        alert('Raça absoluta alem da conciencia, esse é o poder que beira a onipotencia')
-    }
-}
