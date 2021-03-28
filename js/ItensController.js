@@ -47,7 +47,7 @@ export default class ItensController {
 
     comprar(id) {
         const iten = this.itens.find(iten => iten.id === id);
-        console.log(iten, this.itens)
+        console.log(iten, id, this.itens)
         const index = this.itens.indexOf(iten);
         console.log(index)
         if (!(iten && this.money >= iten.preco)) return window.alert('não tem dinheiro suficiente')
