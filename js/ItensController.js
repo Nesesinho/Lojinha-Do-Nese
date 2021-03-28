@@ -54,8 +54,8 @@ export default class ItensController {
         iten.preco += iten.preco * (15 / 100);
         iten.quantidade++;
         this.itens[index] = iten;
-        const elementQuant = this.$('.quantidade_'+id);
-        const elementPreco = this.$('.preco_'+id);
+        const elementQuant = this.$('.quantidade_'+id+' span');
+        const elementPreco = this.$('.preco_'+id+' span');
         this.setElementValue({ reset: elementQuant, value: iten.quantidade }, { reset: elementPreco, value: iten.preco.toFixed(0)});
     }
 
