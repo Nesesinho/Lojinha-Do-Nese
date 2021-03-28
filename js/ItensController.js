@@ -2,8 +2,9 @@ import Service from './Service.js';
 
 export default class ItensController {
     constructor() {
+        this.$ = document.querySelector.bind(document);
         this.money = 0;
-        this.placeItens = document.querySelector('.itens__list');
+        this.placeItens = this.$('.itens__list');
         this.itens = Service.getAll('url')
         this.setInterval = [];
 
@@ -12,7 +13,7 @@ export default class ItensController {
 
     init() {
         this.createItensHtml();
-        const btnComprar = document.querySelectorAll('.btn_comprar')
+        const btnComprar = this.$('.btn_comprar')
         btnComprar.forEach(btn => {
             btn.addEventListener('click', e => {
                 e.preventDefault()
@@ -53,7 +54,13 @@ export default class ItensController {
         iten.preco += iten.preco * (15 / 100);
         iten.quantidade++;
         this.itens[index] = iten;
-        this.init();
+        this.setElementValue({ reset: this.$('.itens__list__iten__quantidade'), value: iten.quantidade });
+    }
+
+    setElementValue(...setters) {
+        setters.forEach(setter => {
+            setter.reset.textContent = setter.value;
+        })
     }
 
     render() {
@@ -65,13 +72,12 @@ export default class ItensController {
             this.setInterval.push(
                 setInterval(() => {
                     this.money += getMoney;
-                    document.querySelector('.dinheiro').textContent = this.money.toFixed(0)+' R$';
-
+                    this.setElementValue({ reset: this.$('.dinheiro'), value: this.money.toFixed(0)+' R$' });
                 }, 1000)
             )
         })
     }
-        
+
     easterEgg(nome, quantidade) {
         if (nome == 'Douglas' && quantidade == 20) {
             alert('Hum pelo visto alguém quer fazer um harem.')
