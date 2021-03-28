@@ -3,7 +3,7 @@ import Service from './Service.js';
 export default class ItensController {
     constructor() {
         this.$ = document.querySelector.bind(document);
-        this.money = 0;
+        this.money = 99999999999;
         this.placeItens = this.$('.itens__list');
         this.itens = Service.getAll('url')
         this.setInterval = [];
@@ -13,7 +13,7 @@ export default class ItensController {
 
     init() {
         this.createItensHtml();
-        const btnComprar = this.$('.btn_comprar')
+        const btnComprar = document.querySelectorAll('.btn_comprar')
         btnComprar.forEach(btn => {
             btn.addEventListener('click', e => {
                 e.preventDefault()
