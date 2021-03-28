@@ -75,6 +75,7 @@ export default class ItensController {
             this.setInterval.push(
                 setInterval(() => {
                     this.money += getMoney;
+                    console.log(getMoney)
                     this.setElementValue({ reset: this.$('.dinheiro'), value: this.money.toFixed(0)+' R$' });
                 }, 1000)
             )
