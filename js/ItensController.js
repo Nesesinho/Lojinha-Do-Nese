@@ -60,13 +60,13 @@ export default class ItensController {
         const elementQuant = this.$('.quantidade_'+id+' span');
         const elementPreco = this.$('.preco_'+id+' span');
         this.setElementValue({ reset: elementQuant, value: iten.quantidade }, { reset: elementPreco, value: iten.preco.toFixed(0)});
+        this.render();
     }
 
     setElementValue(...setters) {
         setters.forEach(setter => {
             setter.reset.textContent = setter.value;
         })
-        this.render();
     }
 
     render() {
