@@ -70,7 +70,7 @@ export default class ItensController {
                     console.log(getMoney)
                     document.querySelector('.dinheiro').textContent = this.money.toFixed(0)+' R$';
 
-                }, 500)
+                }, 100)
             )
         })
     }
