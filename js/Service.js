@@ -15,7 +15,7 @@ export default class Service {
             },
             {
                 id: 2,
-                picture: 'https://images-ext-2.discordapp.net/external/N-UtqlQ2SxWH7Dl98euMFh8nlkg-QTjKIgaTMIF2w14/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/808088684921618433/6810ee374c1a3b584e7e2ea7959faaec.png',
+                picture: 'https://images-ext-2.discordapp.net/external/qohOLfcHK-AR6Jn9_wxArs2R5MTmDCnXUjlZ0442EVY/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/808088684921618433/32ecaea05813c52a53968965aa4d75c2.png',
                 nome: "Rafa",
                 preco: 5000,
                 renda: 50,
@@ -47,7 +47,7 @@ export default class Service {
             },
             {
                 id: 6,
-                picture: 'https://cdn.discordapp.com/avatars/693670430829051985/bfb9a309f9c54f4e6979e49131f91cc9.png',
+                picture: 'https://images-ext-1.discordapp.net/external/C_bIHW66dpfbw427AiI5eyqvWvOlKcDHOtm4X_CeEAQ/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/693670430829051985/ac7aed756a31dc2823cfc3dee47a906a.png',
                 nome: "Mingal",
                 preco: 50000,
                 renda: 500,
