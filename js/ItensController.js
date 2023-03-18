@@ -35,7 +35,7 @@ export default class ItensController {
                 <div class="itens__list__iten__desc">
                     <p class="itens__list__iten__nome">${iten.nome}</p>
                     <p class="itens__list__iten__quantidade quantidade_${iten.id}">Quantidade: <span>${iten.quantidade}</span></p>
-                    <p class="itens__list__iten_preco preco_${iten.id}">Preço: <span>${iten.preco.toFixed(0)}</span> R$</p>
+                    <p class="itens__list__iten_preco preco_${iten.id}">Preço: <span>${iten.preco.toFixed(0).toLocaleString("pt-BR")}</span> R$</p>
                     <p class="itens__list__iten__renda">Renda/s: <span>${iten.renda}</span> R$</p>
                     <button type="button" class="btn_comprar" data-id="${iten.id}">comprar</button>
                 </div>
@@ -75,7 +75,7 @@ export default class ItensController {
             this.setInterval.push(
                 setInterval(() => {
                     this.money += getMoney;
-                    this.setElementValue({ reset: this.$('.dinheiro'), value: this.money.toFixed(0)+' R$' });
+                    this.setElementValue({ reset: this.$('.dinheiro'), value: this.money.toFixed(0).toLocaleString("pt-BR") +' R$' });
                 }, 1000)
             )
         })
